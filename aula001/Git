@@ -1,0 +1,15 @@
+public class GitHub{
+	Username = Maugust;
+	Password = Mozila27
+	
+	comandos Git:
+	
+	Git init = cria um repositorio local;
+	Git remote add Origem (URL da maquina) cria um repositorio remoto e vincula ao local, neste caso o nome é origen;
+	Git fetch origen master;
+	Git ADD . = (irá verificar todos os arquivos da pasta e alterar o que estava antes e incluir os novos arquivos/alterações), se quiser fazer por arquivo é o mesmo comando porém tira o ponto e inclui o nome do arquivo;
+	Git Status = 
+	Git commit - M "informa uma mensagem para saber o por que foi feito o commit";
+	Git push origen master(master é o nome da brench) = envia informação da máquina local para um local remoto;
+	Git pull origem master pucha informações do remoto para a maquina local fazer todo dia de manhã;
+}
