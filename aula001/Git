@@ -13,3 +13,193 @@ public class GitHub{
 	Git push origen master(master é o nome da brench) = envia informação da máquina local para um local remoto;
 	Git pull origem master pucha informações do remoto para a maquina local fazer todo dia de manhã;
 }
+
+suporte@LAB01_PC04 MINGW64 ~/workspace
+$ git init
+Initialized empty Git repository in C:/Users/paulo/workspace/.git/
+
+suporte@LAB01_PC04 MINGW64 ~/workspace (master)
+$ git remote add origen https://github.com/MisaelAugust/Java-TranspoBrasil-Sabado.git
+
+suporte@LAB01_PC04 MINGW64 ~/workspace (master)
+$ git fetch origen master
+remote: Counting objects: 4, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), done.
+From https://github.com/MisaelAugust/Java-TranspoBrasil-Sabado
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origen/master
+
+suporte@LAB01_PC04 MINGW64 ~/workspace (master)
+$ git pull origen master
+From https://github.com/MisaelAugust/Java-TranspoBrasil-Sabado
+ * branch            master     -> FETCH_HEAD
+
+suporte@LAB01_PC04 MINGW64 ~/workspace (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .metadata/
+        .recommenders/
+        RemoteSystemsTempFiles/
+        aula001/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+suporte@LAB01_PC04 MINGW64 ~/workspace (master)
+$ git status 
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        aula001/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+suporte@LAB01_PC04 MINGW64 ~/workspace (master)
+$ git add .
+
+suporte@LAB01_PC04 MINGW64 ~/workspace (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   .gitignore
+        new file:   aula001/.classpath
+        new file:   aula001/.project
+        new file:   aula001/.settings/org.eclipse.jdt.core.prefs
+        new file:   aula001/src/br/com/cursojava/aula001/AreaCirculo.java
+        new file:   aula001/src/br/com/cursojava/aula001/AreaRetangulo.java
+        new file:   aula001/src/br/com/cursojava/aula001/ExemploOperadoresMatema                                    ticos.java
+        new file:   aula001/src/br/com/cursojava/aula001/Hello.java
+        new file:   aula001/src/br/com/cursojava/aula001/MediaNotas.java
+        new file:   aula001/src/br/com/cursojava/aula001/MetodoMax.java
+        new file:   aula001/src/br/com/cursojava/aula001/MetodoMin.java
+        new file:   aula001/src/br/com/cursojava/aula001/MinutosDias.java
+        new file:   aula001/src/br/com/cursojava/aula001/MisaelCidade.java
+        new file:   aula001/src/br/com/cursojava/aula001/MisaelEndereco.java
+        new file:   aula001/src/br/com/cursojava/aula001/MisaelFilme.java
+        new file:   aula001/src/br/com/cursojava/aula001/MisaelNomeIdadeTime.jav                                    a
+        new file:   aula001/src/br/com/cursojava/aula001/PorcentagemDoValor.java
+        new file:   aula001/src/br/com/cursojava/aula001/Potencia.java
+
+
+suporte@LAB01_PC04 MINGW64 ~/workspace (master)
+$ git commit -m "Arquivos da aula 01"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'suporte@LAB01_PC04.(none)')
+
+suporte@LAB01_PC04 MINGW64 ~/workspace (master)
+$ ^C
+
+suporte@LAB01_PC04 MINGW64 ~/workspace (master)
+$ git config --local user.email "misael.august@gmail.com"
+
+suporte@LAB01_PC04 MINGW64 ~/workspace (master)
+$ git config --local user.name "Misael"
+
+suporte@LAB01_PC04 MINGW64 ~/workspace (master)
+$ git commit -m "Arquivos da aula 01"
+[master 4e86546] Arquivos da aula 01
+ 18 files changed, 219 insertions(+)
+ create mode 100644 aula001/.classpath
+ create mode 100644 aula001/.project
+ create mode 100644 aula001/.settings/org.eclipse.jdt.core.prefs
+ create mode 100644 aula001/src/br/com/cursojava/aula001/AreaCirculo.java
+ create mode 100644 aula001/src/br/com/cursojava/aula001/AreaRetangulo.java
+ create mode 100644 aula001/src/br/com/cursojava/aula001/ExemploOperadoresMatematicos.java
+ create mode 100644 aula001/src/br/com/cursojava/aula001/Hello.java
+ create mode 100644 aula001/src/br/com/cursojava/aula001/MediaNotas.java
+ create mode 100644 aula001/src/br/com/cursojava/aula001/MetodoMax.java
+ create mode 100644 aula001/src/br/com/cursojava/aula001/MetodoMin.java
+ create mode 100644 aula001/src/br/com/cursojava/aula001/MinutosDias.java
+ create mode 100644 aula001/src/br/com/cursojava/aula001/MisaelCidade.java
+ create mode 100644 aula001/src/br/com/cursojava/aula001/MisaelEndereco.java
+ create mode 100644 aula001/src/br/com/cursojava/aula001/MisaelFilme.java
+ create mode 100644 aula001/src/br/com/cursojava/aula001/MisaelNomeIdadeTime.java
+ create mode 100644 aula001/src/br/com/cursojava/aula001/PorcentagemDoValor.java
+ create mode 100644 aula001/src/br/com/cursojava/aula001/Potencia.java
+
+suporte@LAB01_PC04 MINGW64 ~/workspace (master)
+$ git log
+commit 4e86546fd69059107ea01a28d894f3d1e24f88e8 (HEAD -> master)
+Author: Misael <misael.august@gmail.com>
+Date:   Sat Sep 15 17:06:04 2018 -0300
+
+    Arquivos da aula 01
+
+commit 2628cd467b30076eaee18d8f9cbcc60fc5f26ff3 (origen/master)
+Author: MisaelAugust <43302374+MisaelAugust@users.noreply.github.com>
+Date:   Sat Sep 15 16:47:41 2018 -0300
+
+    Initial commit
+
+suporte@LAB01_PC04 MINGW64 ~/workspace (master)
+$ git push origen master
+Enumerating objects: 29, done.
+Counting objects: 100% (29/29), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (23/23), done.
+Writing objects: 100% (27/27), 4.36 KiB | 1.45 MiB/s, done.
+Total 27 (delta 5), reused 0 (delta 0)
+remote: Resolving deltas: 100% (5/5), completed with 1 local object.
+To https://github.com/MisaelAugust/Java-TranspoBrasil-Sabado.git
+   2628cd4..4e86546  master -> master
+
+suporte@LAB01_PC04 MINGW64 ~/workspace (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        aula001/Git
+        aula001/Java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+suporte@LAB01_PC04 MINGW64 ~/workspace (master)
+$ git add .
+
+suporte@LAB01_PC04 MINGW64 ~/workspace (master)
+$ git commit -m "Arquivo java e git"
+[master 96d3f46] Arquivo java e git
+ 2 files changed, 112 insertions(+)
+ create mode 100644 aula001/Git
+ create mode 100644 aula001/Java
+
+suporte@LAB01_PC04 MINGW64 ~/workspace (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+suporte@LAB01_PC04 MINGW64 ~/workspace (master)
+$ git push origen master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 2.24 KiB | 2.24 MiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/MisaelAugust/Java-TranspoBrasil-Sabado.git
+   4e86546..96d3f46  master -> master
