@@ -2,7 +2,7 @@ package br.com.cursojava.aula002;
 
 import java.util.Scanner;
 
-public class ex17QuantidadeLetras {
+public class Ex17QuantidadeLetras {
 	public static void main(String[] args) {
 		Scanner tecladoEx17 = new Scanner(System.in);
 		
