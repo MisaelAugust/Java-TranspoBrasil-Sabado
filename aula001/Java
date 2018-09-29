@@ -1,0 +1,97 @@
+public class Java{
+	linguagem programação;
+	O.O. orientado objeto, objeto tem;
+	multiplataforma;
+	propósito geral, ou seja, desktop, web, mobile;
+	fortemente tipada, ou seja, double dentro de int. Sempre tem que declarar o tipo da variavel;
+	Java é uma liguagem compilada e interpretada;
+}
+
+public class AntesDoJava{
+	Fonte > compilação > Aplicação > Compila > sistema operacional;
+}
+ 
+public class DepoisDoJava{
+	Fonte > compilação > Aplicação > Compila > J.V.M. > sistema operacional;
+}
+
+public class J.R.E.{
+	JAVA RUNTIME ENVIROMENT possui a J.V.M.;
+}
+
+public class J.D.K.{
+	JAVA DEVELOPMENT KIT possui J.V.M e o compilador;
+}
+
+public class J.S.E{
+	JAVA STANDARD EDITION são as bibliotecas padrões;
+}
+
+public class NomenclaturaDoPacote(package){
+	O nome de um pacote geralmente é o dominio da empresa (nome totalmente qualificado), e no fim o nome do package, por exemplo br.com.philips.compras
+	isto serve para diferenciar pacotes de uma empresa de outra, por exemplo br.com.tanspobrasil.compras, e é uma nomenclatura padrão;
+		
+	br.com.philips.compras = neste caso dentro do package irá criar uma pasta 'br', dentro desta uma pasta 'com' outra 'philips' e assim por diante, o 'ponto' indica uma pasta dentro de outra pasta;
+}
+
+public class NomeDeClasse{
+	NOME DE CLASSE SEMPRE COM A PRIMEIRA LETRA MAIUSCULA EXEMPLO: Hello, Ola, Compra, assim por diante;
+}
+
+public class JavaCaseSensitive{
+	o java não compila caso escreva System.out.println("Hello world"); utilizando system.out.println("Hello world");
+}
+
+public class VariaveisJava{
+	Existem dois tipos:
+	
+	Primitivas: existem 8 tipos primitivos que são: 
+	INTEIROS = byte, short, char, int, long, inteiros o que muda é o espaço na memória; 
+	REAL = float, double com casas decimais;
+	LOGICO = boolean true ou false;
+	
+	O que define um tipo primitivo é a primeira letra MINÚSCULA;
+	
+	Objetos: Tudo que não é primitivo, exemplo: String;
+	
+	o que define um objeto é que a primeira letra é MAIÚSCULA;
+}
+
+public class DiferencaObjetoVariavel{
+	variável é um espaço na memória, é um apilido para um endereço de memória
+
+	tipro primitivo armazena o valor declarado;
+	objeto utiliza o new cria um endereço no Heap, e este irá para a memória;
+
+}
+
+public class CompararIgualdade{
+
+	comparar tipos primitivos utiliza "==", exemplo:
+
+	int idade = 10;
+	int outraIdade = 10;
+
+	idade == outraIdade;
+
+	Resultado true;
+
+	'==' NÃO FUNCIONA PARA STRING OU QUALQUER OBJETO, TEM QUE USAR O METODO ABAIXO.
+
+	metodo equals irá comparar o conteudo de uma variavel, se tudo for exatamente igual exemplo:
+
+	String A = "Pedro";
+	String b = "Pedro";
+
+	a.equals(b); vai ser true
+
+	String A = "Pedro";
+	String b = "pedro";
+
+	a.equals(b); vai ser false;
+}
+
+public class OperadoresMatematicos{
+	+, -, *, /, %(resto da divisão, retorna o resto de divisão do inteiro, exemplo 10/3, 3*3 = 9 irá sobrar 1, este é o valor que irá retornar), ++ incrementa, -- Decrementa;
+	+=, -=, *=, /=, %=;
+}
