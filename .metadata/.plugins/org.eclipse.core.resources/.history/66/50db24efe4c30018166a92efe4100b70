@@ -1,0 +1,11 @@
+package br.com.cursojava.aula003;
+
+public class ExemploString {
+	public static void main(String[] args) {
+		String curso = "Curso Java TranspoBrasil Sábado";
+		
+		//Quantidade de caracteres
+		
+		System.out.printf("O texto %s possui %d caracteres \n", curso, curso.length());
+	}
+}

@@ -1,0 +1,20 @@
+package br.com.cursojava.aula003;
+
+
+public class Ex14NumerosImpares {
+	public static void main(String[] args) {
+		
+
+		int contador = 0;
+		
+		while(contador <=10){
+			if(contador % 2 != 0){
+			System.out.println(contador);
+			contador++;
+			}else{
+					System.out.println("errado");
+					contador++;
+			}
+		}
+	}
+}

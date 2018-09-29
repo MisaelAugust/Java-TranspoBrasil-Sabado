@@ -1,0 +1,18 @@
+package br.com.cursojava.avaliacao;
+
+//4) Escreva um programa que calcula a soma dos primiros 50 números inteiros;
+
+public class Ex4SomaNumerosPrimos {
+	public static void main(String[] args) {
+		
+		int contador = 0;
+		int quantidadeTotal = 50;
+		
+		while(contador <= quantidadeTotal){
+			int numero = 1;
+			numero = numero + contador;
+			System.out.println(numero);
+			contador++;
+		}
+	}
+}

@@ -1,0 +1,18 @@
+package br.com.cursojava.aula003;
+
+import java.util.Scanner;
+
+public class Ex2IsentoImpostoRenda {
+	public static void main(String[]args){
+		Scanner tecladoEx2 = new Scanner(System.in);
+		
+		double salario = 0;
+		String isentoOuNao = null;
+		
+		System.out.println("Informe seu salario: ");
+		salario = Double.parseDouble(tecladoEx2.nextLine());
+		
+		isentoOuNao = salario > 1800? "você tem que declarar o imposto de renda" : "você é isento do imposto de renda";
+		System.out.printf("Seu salario é de %f, sendo assim %s", salario, isentoOuNao);
+	}
+}

@@ -1,0 +1,13 @@
+13) Escreva um programa que solicite 20 notas e escreva o valor da media das notas;
+14) Escreva um programa que apresente os números impares entre 1 e 100;
+15) Escreva um programa que solicite o nome do usuário e em seguida apresente a quantidade de caracteres do nome informado. O programa deveficar solicitando novas entrdas até que o nome informado seja uma string vazia;
+16) Escreva um programa que solicite uma palavra para o usuário e em seguida repita a palavra digitada conforme exemplo abaixo:
+Palavra "Java"
+Java
+Java Java
+Java Java Java
+Java Java Java Java
+17) Escreva um programa que solicite 10 notas e em seguida calcule e apresente o valor da menor nota informada.
+
+3- metodo que retorna caracteres no java string
+primo só divide por ele mesmo ou 1

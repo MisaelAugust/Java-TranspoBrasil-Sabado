@@ -1,0 +1,24 @@
+package br.com.cursojava.aula003;
+
+import java.util.Scanner;
+
+public class Ex7FraseSemVogais {
+	public static void main(String[] args) {
+		Scanner tecladoEx7 = new Scanner(System.in);
+		
+		System.out.println("Escreva uma frase: ");
+		
+		String frase = tecladoEx7.nextLine();
+		
+		String semVogal = frase.toLowerCase().replace("a", " ");
+		semVogal = frase.toLowerCase().replace("e", " ");
+		semVogal = frase.toLowerCase().replace("i", " ");
+		semVogal = frase.toLowerCase().replace("o", " ");
+		semVogal = frase.toLowerCase().replace("u", " ");
+		
+		System.out.println(semVogal);
+		
+		tecladoEx7.close();		
+
+	}
+}

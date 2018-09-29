@@ -1,0 +1,20 @@
+package br.com.cursojava.aula003;
+
+import java.util.Scanner;
+
+public class Ex8PrimeiraPalavra {
+	public static void main(String[] args) {
+		Scanner tecladoEx8 = new Scanner(System.in);
+		
+		System.out.println("Digite uma frase");
+		
+		String palavra = tecladoEx8.nextLine();
+		
+		int index = palavra.trim().lastIndexOf(" ");
+		
+		System.out.println(palavra.trim().substring(index-1));	
+		
+		tecladoEx8.close();
+		
+	}
+}

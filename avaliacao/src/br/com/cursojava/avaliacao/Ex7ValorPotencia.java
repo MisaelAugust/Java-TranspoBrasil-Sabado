@@ -1,0 +1,18 @@
+package br.com.cursojava.avaliacao;
+
+//7) Escreva um programa que solicite um número e em seguida informe o valor do número elevado a quinta potência;
+
+import java.util.Scanner;
+
+public class Ex7ValorPotencia {
+	public static void main(String[] args) {
+		Scanner tecladoEx7 = new Scanner(System.in);
+		
+		System.out.println("Informe um número");
+		int numeroInformado = Integer.parseInt(tecladoEx7.nextLine());
+		
+		System.out.println(Math.pow(numeroInformado, 5));
+		
+		tecladoEx7.close();
+	}
+}

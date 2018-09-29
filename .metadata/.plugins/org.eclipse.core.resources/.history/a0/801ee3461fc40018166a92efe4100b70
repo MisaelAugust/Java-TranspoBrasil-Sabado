@@ -1,0 +1,8 @@
+package br.com.cursojava.avaliacao;
+
+/*
+ 5) Escreva um programa que solicite 10 notas e em seguida calcula e apresenta a menor e a maior not digitada;
+ */
+public class Ex5MaiorMenorNota {
+
+}

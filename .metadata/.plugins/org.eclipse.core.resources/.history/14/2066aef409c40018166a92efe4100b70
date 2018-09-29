@@ -1,0 +1,24 @@
+package br.com.cursojava.aula003;
+
+import java.util.Scanner;
+
+public class Ex13MediaNotas {
+	public static void main(String[] args) {
+		Scanner tecladoEx13 = new Scanner(System.in);
+		
+		System.out.println("Informe sua nota");
+		double nota = Double.parseDouble(tecladoEx13.nextLine());
+		int contador = 0;
+		double media = nota / 20;
+		
+		while(contador <= 20){
+			System.out.printf("Informe sua nota de número %d \n", contador);
+			nota = Double.parseDouble(tecladoEx13.nextLine());
+			contador++;
+		}
+		
+		System.out.printf("Sua média é: %.2f", media);
+		
+		tecladoEx13.close();
+	}
+}

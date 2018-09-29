@@ -1,0 +1,16 @@
+package br.com.cursojava.aula003;
+
+import java.util.Scanner;
+
+public class Ex11CaixaAltaCaixaBaixa {
+	public static void main(String[] args) {
+		Scanner tecladoEx11 = new Scanner(System.in);
+		
+		System.out.println("Digite uma frase");
+		
+		String frase = tecladoEx11.nextLine();
+		
+		System.out.println(frase.toLowerCase());
+		System.out.println(frase.toUpperCase());
+	}
+}

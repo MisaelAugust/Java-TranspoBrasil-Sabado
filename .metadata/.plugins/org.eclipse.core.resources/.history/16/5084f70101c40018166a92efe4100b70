@@ -1,0 +1,21 @@
+package br.com.cursojava.aula003;
+
+import java.util.Scanner;	
+
+public class Ex9UltimaPalavra {
+	public static void main(String[] args) {
+		Scanner tecladoEx9 = new Scanner(System.in);
+		
+		System.out.println("Digite uma frase: ");
+		
+		String frase = tecladoEx9.nextLine();
+		
+		int quantidadeLetras = frase.length();
+		int ultimaPalavra = frase.lastIndexOf(quantidadeLetras);
+		
+		System.out.println(quantidadeLetras - ultimaPalavra);
+		
+		tecladoEx9.close();
+				
+	}
+}

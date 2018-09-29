@@ -1,0 +1,15 @@
+package br.com.cursojava.aula003;
+
+
+public class Ex14NumerosImpares {
+	public static void main(String[] args) {
+		
+		int numero = 100 % 2;
+		int contador = 0;
+		
+		while(contador <=10){
+			System.out.println(numero);
+			contador++;
+		}
+	}
+}
